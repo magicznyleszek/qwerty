@@ -1,0 +1,23 @@
+{
+  "name": "qwerty",
+  "private": true,
+  "description": "Hello, World!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smutnyleszek/qwerty.git"
+  },
+  "author": "Leszek Pietrzak",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/smutnyleszek/qwerty/issues",
+    "email": "smutnyleszek@gmail.com"
+  },
+  "homepage": "https://qwerty.smutnyleszek.com",
+  "scripts": {
+    "jekyll:build": "jekyll build",
+    "jekyll:serve": "jekyll serve --watch --baseurl ''"
+  },
+  "watch": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
