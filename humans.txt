@@ -1,0 +1,17 @@
+## TEAM
+
+Everything: Leszek Pietrzak
+Site: smutnyleszek.com
+Email: smutnyleszek@gmail.com
+Location: Warsaw, Poland
+
+
+## THANKS
+
+Tom Preston-Werner, Nick Quaranto: jekyllrb.com
+
+
+## SITE
+
+Language: English
+Software: Atom
