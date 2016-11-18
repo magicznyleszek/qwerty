@@ -1,0 +1,46 @@
+@keyframes fade {
+    0% {
+        opacity: 0;
+        filter: blur(0rem);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(1rem);
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+body::after {
+    background-image: url("william-adolphe-bouguereau-the-wave-1896.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body::after {
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-timing-function: ease-in-out;
+}
