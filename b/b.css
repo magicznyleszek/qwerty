@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+b {
+    display: inline-block;
+    margin: 3px;
+    border-top-style: dashed;
+    border-top-width: 3px;
+    border-top-color: inherit;
+    border-bottom-style: dotted;
+    border-bottom-color: inherit;
+    border-bottom-width: 3px;
+    color: silver;
+    font-size: 1.25rem;
+    font-weight: 100;
+    line-height: 2rem;
+    user-select: none;
+    transition: 1s;
+}
+
+b:hover {
+    padding-right: 2px;
+    color: deepskyblue;
+}
+
+b:active {
+    padding-right: 6px;
+    color: aquamarine;
+}
