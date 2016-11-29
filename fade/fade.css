@@ -4,9 +4,21 @@
         filter: blur(0rem);
     }
 
+    25% {
+        filter: blur(0.222rem);
+    }
+
+    50% {
+        filter: blur(0.666rem);
+    }
+
+    75% {
+        filter: blur(2rem);
+    }
+
     100% {
         opacity: 1;
-        filter: blur(1rem);
+        filter: blur(6rem);
     }
 }
 
@@ -42,5 +54,5 @@ body::after {
     animation-delay: 0s;
     animation-direction: alternate;
     animation-fill-mode: none;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
 }
