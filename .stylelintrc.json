@@ -46,7 +46,7 @@
         "number-leading-zero": ["always", {
             "severity": "warning"
         }],
-        "number-max-precision": [3, {
+        "number-max-precision": [4, {
             "severity": "warning"
         }],
         "number-no-trailing-zeros": null,
@@ -466,7 +466,7 @@
         "block-closing-brace-newline-after": ["always", {
             "severity": "warning"
         }],
-        "block-closing-brace-newline-before": ["always", {
+        "block-closing-brace-newline-before": ["always-multi-line", {
             "severity": "warning"
         }],
         "block-closing-brace-space-after": null,
@@ -572,12 +572,12 @@
             "severity": "warning"
         }],
 
-        "rule-nested-empty-line-before": ["always", {
+        "rule-nested-empty-line-before": ["always-multi-line", {
             "severity": "warning",
             "except": ["first-nested"],
             "ignore": ["after-comment"]
         }],
-        "rule-non-nested-empty-line-before": ["always", {
+        "rule-non-nested-empty-line-before": ["always-multi-line", {
             "severity": "warning",
             "ignore": ["after-comment"]
         }],
@@ -637,11 +637,7 @@
 
         "stylelint-disable-reason": null,
 
-        "comment-empty-line-before": ["always", {
-            "severity": "warning",
-            "except": ["first-nested"],
-            "ignore": ["stylelint-commands"]
-        }],
+        "comment-empty-line-before": null,
         "comment-whitespace-inside": ["always", {
             "severity": "warning"
         }],

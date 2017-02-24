@@ -4,27 +4,59 @@ body {
 
 b {
     display: inline-block;
-    margin: 3px;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
     border-top-style: dashed;
-    border-top-width: 3px;
     border-top-color: inherit;
     border-bottom-style: dotted;
     border-bottom-color: inherit;
-    border-bottom-width: 3px;
-    color: silver;
     font-size: 1.25rem;
     font-weight: 100;
     line-height: 2rem;
+    transition-timing-function: ease;
     user-select: none;
-    transition: 1s;
 }
 
+/* default state */
+
+b {
+    margin-left: 0.05rem;
+    margin-right: 0.4rem;
+    border-top-width: 0.2rem;
+    border-bottom-width: 0.2rem;
+    padding-right: 6px;
+    color: gold;
+    transition-duration: 4s;
+}
+
+/* hover state */
+
 b:hover {
-    padding-right: 2px;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding-right: 0;
     color: deepskyblue;
 }
 
+b:hover {transition-duration: 2s;}
+b:hover b b b b {transition-duration: 1.75s;}
+b:hover b b b b b b b b {transition-duration: 1.5s;}
+b:hover b b b b b b b b b b b b {transition-duration: 1.25s;}
+b:hover b b b b b b b b b b b b b b b b {transition-duration: 1s;}
+
+/* active state */
+
 b:active {
-    padding-right: 6px;
-    color: aquamarine;
+    margin-left: 0.4rem;
+    margin-right: 0;
+    padding-right: 0.75rem;
+    color: deeppink;
 }
+
+b:active {transition-duration: 0.5s;}
+b:active b b b b {transition-duration: 0.75s;}
+b:active b b b b b b b b {transition-duration: 1s;}
+b:active b b b b b b b b b b b b {transition-duration: 1.25s;}
+b:active b b b b b b b b b b b b b b b b {transition-duration: 1.5s;}
+b:active b b b b b b b b b b b b b b b b b b b b {transition-duration: 1.75s;}
+b:active b b b b b b b b b b b b b b b b b b b b b b b b {transition-duration: 2s;}
