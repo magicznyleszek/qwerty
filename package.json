@@ -14,6 +14,7 @@
   },
   "homepage": "https://qwerty.smutnyleszek.com",
   "scripts": {
+    "serve": "npm run jekyll:serve",
     "jekyll:build": "jekyll build",
     "jekyll:serve": "jekyll serve --watch --baseurl ''"
   },

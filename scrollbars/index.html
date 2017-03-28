@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<link href="/scrollbars/scrollbars.css" media="all" rel="stylesheet">
+
+{% for i in (1..100) %}
+<section qwerty-scrollbars="{{ i | modulo: 5 }}">
+{% endfor %}
+<input type="text" autofocus></input>
+{% for i in (1..100) %}
+</section>
+{% endfor %}
