@@ -39,7 +39,7 @@ body {
     margin: 0;
     padding: 2rem;
     background-color: hsl(160, 100%, 15%);
-    font-size: 200%;
+    text-align: center;
 }
 
 ::selection {
@@ -58,7 +58,7 @@ a {
     height: 1em;
     line-height: 1em;
     font-weight: 900;
-    text-align: center;
+    text-align: left;
     animation-name: crawl;
     animation-direction: normal;
     animation-timing-function: ease-in-out;
