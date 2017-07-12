@@ -40,6 +40,7 @@ body {
     padding: 2rem;
     background-color: hsl(160, 100%, 15%);
     text-align: center;
+    font-size: 200%;
 }
 
 ::selection {
@@ -50,8 +51,8 @@ body {
 a {
     display: inline-block;
     vertical-align: middle;
-    margin: 0.25em;
-    border: 0.125em solid currentColor;
+    margin: 0.0625em;
+    border: 0.0625em solid currentColor;
     border-radius: 1em;
     padding: 0 0.25em;
     width: 1em;
