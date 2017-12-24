@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<link href="/cssxy/cssxy.css" media="all" rel="stylesheet">
+
+{% for y in (0..199) %}
+    {% for x in (0..199) %}
+        <a
+            xy
+            href="#{{x}}-{{y}}"
+            id="{{x}}-{{y}}"
+            data-xy="({{x}}, {{y}})"
+            style="left: {{x}}0px; top: {{y}}0px"
+        ></a>
+    {% endfor %}
+{% endfor %}
