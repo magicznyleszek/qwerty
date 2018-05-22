@@ -4,15 +4,15 @@
   "description": "Hello, World!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/smutnyleszek/qwerty.git"
+    "url": "https://github.com/magicznyleszek/qwerty.git"
   },
   "author": "Leszek Pietrzak",
   "license": "CC-BY-4.0",
   "bugs": {
-    "url": "https://github.com/smutnyleszek/qwerty/issues",
-    "email": "smutnyleszek@gmail.com"
+    "url": "https://github.com/magicznyleszek/qwerty/issues",
+    "email": "leszek@magicznyleszek.xyz"
   },
-  "homepage": "https://qwerty.smutnyleszek.com",
+  "homepage": "https://qwerty.magicznyleszek.xyz",
   "scripts": {
     "serve": "npm run jekyll:serve",
     "jekyll:build": "jekyll build",
