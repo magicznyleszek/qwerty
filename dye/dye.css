@@ -4,6 +4,10 @@ table {
   border-collapse: collapse;
 }
 
+table {
+  margin: 3rem auto;
+}
+
 table tr th {
   font-weight: bold;
 }
