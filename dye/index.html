@@ -2,42 +2,101 @@
 layout: default
 ---
 
-<h1>Rit Dye (liquid) calculator</h1>
+<link href="/dye/dye.css" media="all" rel="stylesheet">
 
-<ol>
-  <li>
-    <input id="fabric-weight" type="number" value="" step="1" min="1" style="width: 4rem;"> &rarr;
-    grams of fabric
-  </li>
+<h1>Rit Dye calculator</h1>
 
-  <li>
-    <strong>H<sub>2</sub>O</strong> &rarr;
-    <code id="water-ml">0</code> ml
-    (60-70&deg;C)
-  </li>
+<p>This tool is made for the liquid dye only. Calculations are based on the amounts of stuff suggested by the producer:</p>
 
-  <li>
-    <strong>dye</strong> &rarr;
-    <code id="dye-ml">0</code> ml
-    (<code id="dye-ts">0</code> teaspoon)
-    <br/>
-    <small>double for bolder color</small>
-  </li>
+<ul>
+  <li>3 gallons of water per 1 pound of fabric,</li>
+  <li>half a bottle of dye per 1 pound of fabric,</li>
+  <li>and 1 cup of salt per 1 gallon of water.</li>
+</ul>
 
-  <li>
-    <strong>salt</strong> &rarr;
-    <code id="salt-ml">0</code> ml
-    (<code id="salt-cup">0</code> cup)
-  </li>
+<p>Normal people use metric system, so 11000 ml of water, 118 ml of dye and 750 ml of salt for 454 g of fabric.</p>
 
-  <li>
-    <strong>detergent</strong> &rarr;
-    <code id="detergent-ts">1</code> ts
-  </li>
-</ol>
+<p>If you try using those suggested numbers in real life though, you would quickly see that they don't make a lot of sense.</p>
 
-<small>1 teaspoon = 5 ml</small>
+<table>
+  <caption>The calculator</caption>
+
+  <thead>
+    <tr>
+      <th></th>
+      <th>name</th>
+      <th>amount</th>
+      <th>ratio</th>
+      <th>note</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>fabric</td>
+      <td>
+        <input
+          id="fabric-weight"
+          type="number"
+          value=""
+          step="1"
+          min="1"
+          placeholder="grams"
+        >
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>2.</td>
+      <td>H<sub>2</sub>O</td>
+      <td><code id="water-ml">0</code> ml</td>
+      <td><code>24.2</code></td>
+      <td>60-70&deg;C</td>
+    </tr>
+
+    <tr>
+      <td>3.</td>
+      <td>dye</td>
+      <td>
+        <code id="dye-ml">0</code> ml
+        <br/>
+        <code id="dye-ts">0</code> teaspoon
+      </td>
+      <td><code>0.26</code></td>
+      <td>double for bolder color</td>
+    </tr>
+
+    <tr>
+      <td>4.</td>
+      <td>salt</td>
+      <td>
+        <code id="salt-ml">0</code> ml
+        <br/>
+        <code id="salt-cup">0</code> cup
+      </td>
+      <td>1.45</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>5.</td>
+      <td>detergent</td>
+      <td><code id="detergent-ts">1</code> ts</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+<small>1 teaspoon is 5 ml.</small>
 <br/>
-<small>1 cup = 250 ml</small>
+<small>1 cup is 250 ml.</small>
+<br/>
+<small>1 Rit Dye™ bottle is 236 ml.</small>
+</p>
 
 <script src="/dye/dye.js"></script>

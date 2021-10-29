@@ -2,7 +2,12 @@
   'use strict';
 
   function parse(x) {
-    return Number.parseFloat(x).toFixed(1);
+    const parsed = Number.parseFloat(x);
+    if (parsed !== NaN) {
+      return parsed.toFixed(1);
+    } else {
+      return 0;
+    }
   }
 
   // ml to teaspoon
@@ -17,7 +22,7 @@
   const DYE_RATIO = 0.26;
 
   // how much salt is needed for 1 gram of fabric
-  const SALT_RATIO = 1.452;
+  const SALT_RATIO = 1.45;
 
   const nodes = {};
   nodes.fabricWeight = document.getElementById("fabric-weight");
@@ -29,7 +34,7 @@
   nodes.detergentTs = document.getElementById("detergent-ts");
 
   nodes.fabricWeight.addEventListener("input", (evt) => {
-    const fabricGrams = parseInt(evt.target.value);
+    let fabricGrams = parseInt(evt.target.value) || 0;
 
     nodes.waterMl.innerText = parse(fabricGrams * WATER_RATIO)
 

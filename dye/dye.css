@@ -1,0 +1,23 @@
+table {
+  border: 1px dotted currentColor;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table tr th {
+  font-weight: bold;
+}
+
+table tr th,
+table tr td {
+  border: 1px dotted currentColor;
+  padding: 0.5rem;
+}
+
+table thead tr th {
+  border-style: solid;
+}
+
+input#fabric-weight {
+  width: 4rem;
+}
