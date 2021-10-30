@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 table {
   border: 1px dotted currentColor;
   border-spacing: 0;
@@ -22,6 +26,17 @@ table thead tr th {
   border-style: solid;
 }
 
+table caption {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
 input#fabric-weight {
   width: 4rem;
+}
+
+/* to disable zoom on mobile when focusing */
+input, textarea {
+  font-size: 1rem;
 }
