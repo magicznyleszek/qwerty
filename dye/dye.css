@@ -1,15 +1,40 @@
 html {
   font-size: 16px;
+  background-color: lavender;
+  color: indigo;
+}
+
+body {
+  margin: 3rem;
+}
+
+header.logo-wrapper {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+section.calculator {
+  margin: 1rem auto;
+}
+
+section.description {
+  max-width: 30rem;
+  margin: 1rem auto;
+}
+
+footer.ending {
+  text-align: center;
+  margin: 1rem auto;
 }
 
 table {
-  border: 1px dotted currentColor;
   border-spacing: 0;
   border-collapse: collapse;
+  background: lavenderblush;
 }
 
 table {
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 table tr th {
@@ -18,8 +43,12 @@ table tr th {
 
 table tr th,
 table tr td {
-  border: 1px dotted currentColor;
+  border: 2px dotted currentColor;
   padding: 0.5rem;
+}
+
+table tr td.td-amount {
+  font-weight: bold;
 }
 
 table thead tr th {
@@ -28,12 +57,17 @@ table thead tr th {
 
 table caption {
   font-weight: bold;
-  text-transform: uppercase;
   padding: 0.5rem;
+  font-size: 1.5rem;
 }
 
 input#fabric-weight {
   width: 4rem;
+  background: transparent;
+  border: 2px solid indigo;
+  color: indigo;
+  font-weight: bold;
+  font-family: monospace;
 }
 
 /* to disable zoom on mobile when focusing */
